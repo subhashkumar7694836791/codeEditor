@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Visual_Studio_Code_Insiders_1.36_icon.svg/1024px-Visual_Studio_Code_Insiders_1.36_icon.svg.png" alt="error 404">
+        <h3>File</h3>
+        <h3>Edit</h3>
+        <h3>Selection</h3>
+        <h3>View</h3>
+        <h3>Go</h3>
+        <h3>Run</h3>
+        <h3>Terminal</h3>
+        <h3>Help</h3>
+      
+      </div>
+      <div class="top-center">
+        <h2>Visual Studio Code - Insiders</h2>
+      </div>
+      <div class="top-right">
+        <i class="ri-side-bar-line write"></i>
+        <i class="ri-side-bar-fill bottom"></i>
+        <i class="ri-side-bar-line back"></i>
+        <i class="ri-layout-2-line"></i>
+        <i class="ri-subtract-fill closevs"></i>
+        <i class="ri-stop-mini-line closevs"></i>
+        <i class="ri-close-fill closevs"></i>
+      </div>
+    </div>
+    <div class="left">
+      <i class="ri-file-copy-line explore"></i>
+      <i class="ri-search-line"></i>
+      <i class="ri-git-branch-fill"></i>
+      <i class="ri-bug-line"></i>
+      <i class="ri-function-line"></i>
+            <i class="ri-github-fill"></i>
+            <i class="ri-slideshow-line"></i>
+      <i class="ri-more-fill"></i>
+      <div class="left-bottom">
+        <i class="ri-user-line"></i>
+        <i class="ri-settings-3-fill"></i>
+      </div>
+    </div>
+    <div id="main">
+      <div class="page1">
+       <div class="page1-left">
+        <div class="page1-left-top">
+          <h3>EXPLORER</h3>
+          <i class="ri-more-fill"></i>
+        </div>
+        <div class="page1-left-form">
+        <div class="icons">
+          <h1>Folder</h1>
+          <div class="icon">
+            <i class="ri-file-add-line file"></i>
+            <i class="ri-folder-add-line folder"></i>
+            <i class="ri-refresh-line"></i>
+            <i class="ri-file-copy-fill"></i>
+          </div>
+          
+        </div>
+        <form action="/createfile" method="post">
+          <input class="filename" type="text" name="filename" placeholder="filename">
+        </form>
+        <form action="/createfolder" method="post">
+          <input class="foldername" type="text" name="foldername" placeholder="foldername">
+        </form>
+        </div>
+       </div>
+       <div class="page1-right">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Visual_Studio_Code_Insiders_1.36_icon.svg/1024px-Visual_Studio_Code_Insiders_1.36_icon.svg.png" alt="">
+       </div>
+      </div>
+    </div>
+    <script src="/javascripts/script.js"></script>
+  </body>
+
+</html>

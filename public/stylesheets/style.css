@@ -181,10 +181,11 @@ form{
 }
 form input{
   display: none;
-
   width: 100%;
   padding: .5vw;
   margin-bottom: 2px;
   border: none;
+  background-color: #222;
+  color: white;
   outline-color: blueviolet ;
 }
